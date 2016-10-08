@@ -22,7 +22,7 @@ build:
   steps:
     # Build Hugo site
     - arjen/hugo-build:
-        version: "0.15"
+        version: "HEAD"
         theme: hugo-creative-theme
         config: config.toml
         disable_pygments: true
