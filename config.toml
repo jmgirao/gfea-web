@@ -20,10 +20,19 @@ theme        = "hugo-creative-theme"
   # To provide some metadata for search engines feel free to add some
   # information about you and your website.
   name        = "GFE Arzila"
-  description = "Your description"
+  description = "Baixo Mondego"
 
   # The path must be relative to the static folder
   favicon     = "favicon.ico"
+
+  # Custom CSS
+  custom_css = ["css/hero.css"]
+
+  #Custom JavaScript
+  custom_js = ["index.js"]
+
+  #Custom Plugins JavaScript
+  plugins_js = []
 
 
   # Navigation
@@ -31,7 +40,7 @@ theme        = "hugo-creative-theme"
     brand = "GFE Arzila"
 
     [params.navigation.links]
-      about     = "About"
+      about     = "Sobre"
       services  = "Services"
       portfolio = "Portfolio"
       contact   = "Contact"
@@ -47,42 +56,41 @@ theme        = "hugo-creative-theme"
 
   # About section
   [params.about]
-    headline    = "We've got what you need!"
+    headline    = "Sobre"
     description = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
-    buttonText  = "Get started!"
-
+    buttonText  = "Obter historial"
 
   # Service section
   [params.services]
     headline = "At your service"
 
-        [[params.services.list]]
-            icon        = "fa-diamond"
-            title       = "Sturdy Templates"
-            description = "Our templates are updated regularly so they don't break."
-
-        [[params.services.list]]
-      icon        = "fa-paper-plane"
-      title       = "Ready to Ship"
-      description = "You can use this theme as is, or you can make changes!"
+    [[params.services.list]]
+      icon        = "fa-diamond"
+      title       = "Sturdy Templates"
+      description = "Our templates are updated regularly so they don't break."
 
     [[params.services.list]]
-            icon        = "fa-newspaper-o"
-            title       = "Up to Date"
-            description = "We update dependencies to keep things fresh."
+        icon        = "fa-paper-plane"
+        title       = "Ready to Ship"
+        description = "You can use this theme as is, or you can make changes!"
 
-        [[params.services.list]]
-            icon        = "fa-heart"
-            title       = "Made with Love"
-            description = "You have to make your websites with love these days!"
+    [[params.services.list]]
+      icon        = "fa-newspaper-o"
+      title       = "Up to Date"
+      description = "We update dependencies to keep things fresh."
+
+    [[params.services.list]]
+      icon        = "fa-heart"
+      title       = "Made with Love"
+      description = "You have to make your websites with love these days!"
 
 
     # Portfolio modals
   [params.portfolio.modal]
-        client     = "Client"
-        date       = "Date"
-        category   = "Category"
-        buttonText = "Close"
+    client     = "Client"
+    date       = "Date"
+    category   = "Category"
+    buttonText = "Close"
 
     # Aside section
   [params.aside]
@@ -94,7 +102,7 @@ theme        = "hugo-creative-theme"
 
   # Contact section
   [params.contact]
-    headline    = "Let's Get In Touch!"
-    description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
-    phone       = "123-456-6789"
-    email       = "feedback@startbootstrap.com"
+    headline    = "Contactos"
+    description = "Give us a call or send us an email and we will get back to you as soon as possible!"
+    facebook    = "[@gfearzila](https://www.facebook.com/gfearzila)"
+    email       = "gfearzila@gmail.com"
