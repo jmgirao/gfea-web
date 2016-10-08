@@ -21,5 +21,11 @@ build:
     # http://devcenter.wercker.com/docs/steps/index.html
   steps:
     # Build Hugo site
-    - arjen/hugo-build:
+    - arjen/hugo-build@1.12.1:
         version: "0.15"
+        theme: herring-cove
+        flags: --buildDrafts=true
+    - script:
+        name: ls stuff
+        code: |
+          ls -haltr /pipeline/source/public
