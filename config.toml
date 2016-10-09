@@ -1,4 +1,4 @@
-baseurl      = "http://gfearzila.com/"
+baseurl      = "hhttps://jmgirao.github.io/gfea-web/" #TODO change this
 languageCode = "pt-PT"
 title        = "GFE Arzila"
 theme        = "hugo-creative-theme"
