@@ -27,6 +27,7 @@ theme        = "hugo-creative-theme"
 
   # Custom CSS
   custom_css = [
+    "css/index.css",
     "css/hero.css",
     "css/aside.css"
   ]
@@ -42,12 +43,21 @@ theme        = "hugo-creative-theme"
   [params.navigation]
     brand = "GFE Arzila"
 
-    [params.navigation.links]
-      about     = "Sobre"
-      services  = "Services"
-      portfolio = "Portfolio"
-      contact   = "Contact"
+    [[params.navigation.list]]
+      ref = "about"
+      text = "Sobre"
 
+    [[params.navigation.list]]
+      ref = "portfolio"
+      text = "Portfolio"
+
+    [[params.navigation.list]]
+      ref = "events"
+      text = "Eventos"
+
+    [[params.navigation.list]]
+      ref = "contact"
+      text = "Contactos"
 
   # Hero section
   [params.hero]
@@ -65,7 +75,7 @@ theme        = "hugo-creative-theme"
 
   # Service section
   [params.services]
-    headline = "At your service"
+    headline = ""
 
     [[params.services.list]]
       icon        = "fa-diamond"
@@ -88,15 +98,15 @@ theme        = "hugo-creative-theme"
       description = "You have to make your websites with love these days!"
 
 
-    # Portfolio modals
+  # Portfolio modals
   [params.portfolio.modal]
     client     = "Client"
     date       = "Date"
     category   = "Category"
     buttonText = "Close"
 
-    # Aside section
-  [params.aside]
+  # Aside section
+  [params.events]
     headline = "Eventos"
     description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
 

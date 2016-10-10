@@ -1,0 +1,12 @@
+.text-back-red {
+  color: rgba(52, 52, 52, .7);
+}
+
+.text-back-red a {
+  color: rgba(52, 52, 52, .7);
+}
+
+.text-back-red a:hover,
+.text-back-red a:focus {
+  color: #fff;
+}

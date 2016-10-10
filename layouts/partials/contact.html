@@ -1,5 +1,5 @@
 {{ "<!-- CONTACT -->" | safeHTML }}
-<section id="contact">
+<section id="contact" class="bg-primary">
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
@@ -7,7 +7,7 @@
                     <h2 class="section-heading">{{ . }}</h2>
                 {{ end }}
                 {{ if and .Site.Params.contact.headline .Site.Params.contact.description }}
-                    <hr class="primary">
+                    <hr class="light">
                 {{ end }}
                 {{ with .Site.Params.contact.description }}
                     <p>{{ . | markdownify }}</p>
@@ -22,7 +22,7 @@
                 {{ end }}
                 col-sm-offset-2 text-center">
                     <i class="fa fa-facebook fa-3x wow bounceIn"></i>
-                    <p>{{ .Site.Params.contact.facebook | markdownify }}</p>
+                    <p class="text-back-red">{{ .Site.Params.contact.facebook | markdownify }}</p>
                 </div>
             {{ end }}
             {{ if .Site.Params.contact.email }}
@@ -34,7 +34,7 @@
                 {{ end }}
                  text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:{{ .Site.Params.contact.email }}">{{ .Site.Params.contact.email }}</a></p>
+                    <p class="text-back-red"><a href="mailto:{{ .Site.Params.contact.email }}">{{ .Site.Params.contact.email }}</a></p>
                 </div>
             {{ end }}
         </div>

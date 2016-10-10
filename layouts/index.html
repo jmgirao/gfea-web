@@ -4,7 +4,7 @@
         {{ partial "head.html" . }}
     </head>
     <body id="page-top">
-        {{ if or .Site.Params.navigation.links.about .Site.Params.navigation.links.services .Site.Params.navigation.links.portfolio .Site.Params.navigation.links.contact }}
+        {{ if .Site.Params.navigation }}
             {{ partial "nav.html" . }}
         {{ end }}
 
@@ -24,8 +24,8 @@
             {{ partial "portfolio.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.aside }}
-            {{ partial "aside.html" . }}
+        {{ if .Site.Params.events }}
+            {{ partial "events.html" . }}
         {{ end }}
 
         {{ if .Site.Params.contact }}

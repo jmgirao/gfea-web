@@ -1,14 +1,14 @@
 {{ "<!-- ASIDE -->" | safeHTML }}
-<aside class="bg-dark">
+<aside id="events">
   <div class="events-container text-center">
     <div class="call-to-action">
-        {{ with $.Site.Params.aside.headline }}<h2>{{ . }}</h2>{{ end }}
-        {{ with $.Site.Params.aside.description }}<p>{{ . }}</p>{{ end }}
+        {{ with $.Site.Params.events.headline }}<h2>{{ . }}</h2>{{ end }}
+      <hr class="primary">
+        {{ with $.Site.Params.events.description }}<p>{{ . }}</p>{{ end }}
     </div>
-    <hr class="primary">
     <div class="row">
     {{ range .Site.Data.events }}
-      <div class="col-lg-3 col-md-6 col-sm-6 text-center wow bounceIn">
+      <div class="col-lg-6 col-md-6 col-sm-6 text-center wow bounceIn">
         <div class="service-box">
           <img src="img/events/{{ .img }}" class="img-circle" alt="">
           {{ with .title }}<h3>{{ . }}</h3>{{ end }}
