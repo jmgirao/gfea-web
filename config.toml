@@ -26,7 +26,10 @@ theme        = "hugo-creative-theme"
   favicon     = "favicon.ico"
 
   # Custom CSS
-  custom_css = ["css/hero.css", "css/aside.css"]
+  custom_css = [
+    "css/hero.css",
+    "css/aside.css"
+  ]
 
   #Custom JavaScript
   custom_js = ["index.js"]
