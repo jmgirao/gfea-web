@@ -7,3 +7,9 @@
 .text-back-red a:focus {
   color: #fff;
 }
+
+
+#services,
+#portfolio {
+  padding-top: 20px;
+}

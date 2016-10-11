@@ -18,7 +18,7 @@
             <ul class="nav navbar-nav navbar-right">
                 {{ range .Site.Params.navigation.list }}
                 <li>
-                    <a class="page-scroll" href="#{{ .ref }}">{{ .text }}</a>
+                    <a class="page-scroll" href="#{{ .ref }}" {{ if .scrollOffset }} data-scroll-offset="{{ .scrollOffset }}" {{ end }}>{{ .text }}</a>
                 </li>
                 {{ end }}
             </ul>
