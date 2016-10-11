@@ -1,7 +1,4 @@
-.text-back-red {
-  color: rgba(52, 52, 52, .7);
-}
-
+.text-back-red,
 .text-back-red a {
   color: rgba(52, 52, 52, .7);
 }
