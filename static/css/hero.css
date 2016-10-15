@@ -1,5 +1,6 @@
 header {
   min-height: 100vh;
+  background: none;
 }
 
 header .scroll-arrow {
@@ -7,4 +8,19 @@ header .scroll-arrow {
   bottom: 0;
   width: 100%;
   color: #ddd;
+}
+
+.header-image {
+  opacity: .8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }

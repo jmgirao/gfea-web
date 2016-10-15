@@ -30,14 +30,15 @@ theme        = "hugo-creative-theme"
     "css/index.css",
     "css/hero.css",
     "css/aside.css",
-    "css/nav.css"
+    "css/nav.css",
+    "css/cta-events.css"
   ]
 
   #Custom JavaScript
-  custom_js = ["index.js"]
+  custom_js = ["cta-events.js"]
 
   #Custom Plugins JavaScript
-  plugins_js = []
+  plugins_js = ["plugins/flipclock/flipclock.min.js"]
 
 
   # Navigation
@@ -67,6 +68,11 @@ theme        = "hugo-creative-theme"
     slogan       = "Grupo Folclórico e Etnográfico de Arzila"
     subtitle     = "42 anos em representação dos usos e costumes dos nossos antepassados"
     scrollButton = true
+
+    [params.hero.event]
+      helperText = "Próximo evento"
+      title = "Sopas & Papas"
+      eventDate = "2016-11-26 19:00"
 
 
   # About section

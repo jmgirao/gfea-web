@@ -1,0 +1,19 @@
+<div class="cta-events">
+  <p class="helper-text">{{ .helperText }}</p>
+  <h2><a href="#events" class="page-scroll">{{ .title }}</a></h2>
+  <div class="count-down" {{with .eventDate}} data-event-date="{{ . }}" {{ end }}>
+    <div>
+      <span class="days"></span>
+      <div class="small-text">Dias</div>
+    </div><div>
+      <span class="hours"></span>
+      <div class="small-text">Horas</div>
+    </div><div>
+      <span class="minutes"></span>
+      <div class="small-text">Minutos</div>
+    </div><div>
+      <span class="seconds"></span>
+      <div class="small-text">Segundos</div>
+    </div>
+  </div>
+</div>

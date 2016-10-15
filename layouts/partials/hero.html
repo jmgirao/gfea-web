@@ -1,5 +1,6 @@
 {{ "<!-- HEADER -->" | safeHTML }}
 <header>
+  <div class="header-image"></div>
   <div class="header-content">
     <div class="header-content-inner">
       {{ with .Site.Params.hero.slogan }}
@@ -8,8 +9,12 @@
       {{ if and .Site.Params.hero.slogan .Site.Params.hero.subtitle }}
         <hr>
       {{ end }}
-      {{ with .Site.Params.hero.subtitle }}
-        <p>{{ . | markdownify }}</p>
+      {{ if .Site.Params.hero.event }}
+        {{ partial "cta-events.html" .Site.Params.hero.event }}
+      {{ else }}
+        {{ with .Site.Params.hero.subtitle }}
+          <p>{{ . | markdownify }}</p>
+        {{ end }}
       {{ end }}
     </div>
   </div>
