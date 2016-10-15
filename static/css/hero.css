@@ -1,6 +1,12 @@
 header {
   min-height: 100vh;
   background: none;
+  display: flex;
+}
+
+header .header-content {
+  display: flex;
+  align-items: center;
 }
 
 header .scroll-arrow {
