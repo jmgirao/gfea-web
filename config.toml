@@ -38,7 +38,7 @@ theme        = "hugo-creative-theme"
   custom_js = ["cta-events.js"]
 
   #Custom Plugins JavaScript
-  plugins_js = ["plugins/flipclock/flipclock.min.js"]
+  plugins_js = []
 
 
   # Navigation
@@ -73,6 +73,7 @@ theme        = "hugo-creative-theme"
       helperText = "Próximo evento"
       title = "Sopas & Papas"
       eventDate = "2016-11-26 19:00"
+      status = "A decorrer..."
 
 
   # About section
@@ -129,9 +130,13 @@ theme        = "hugo-creative-theme"
   [params.contact]
     headline    = "Contactos"
     description = "Give us a call or send us an email and we will get back to you as soon as possible!"
-    facebook    = "[@gfearzila](https://www.facebook.com/gfearzila)"
     email       = "gfearzila@gmail.com"
+
+    [params.contact.facebook]
+      text = "@gfearzila"
+      link = "https://www.facebook.com/gfearzila"
 
     [params.contact.address]
       address = "Rua do Bairro nº 16, Arzila"
       postalCode = "3045-356 Arzila"
+      coord = "40.1838504,-8.554425"

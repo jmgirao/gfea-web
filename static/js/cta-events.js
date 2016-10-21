@@ -9,16 +9,16 @@
       return;
     }
 
-    var deadline = new Date(el.data('eventDate'));
+    let deadline = new Date(el.data('eventDate'));
     initializeClock('.count-down', deadline);
   }
 
   function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
-    var seconds = Math.floor((t / 1000) % 60);
-    var minutes = Math.floor((t / 1000 / 60) % 60);
-    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    let t = Date.parse(endtime) - Date.parse(new Date());
+    let seconds = Math.floor((t / 1000) % 60);
+    let minutes = Math.floor((t / 1000 / 60) % 60);
+    let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    let days = Math.floor(t / (1000 * 60 * 60 * 24));
     return {
       'total': t,
       'days': days,
@@ -29,14 +29,14 @@
   }
 
   function initializeClock(className, endtime) {
-    var clock = document.querySelector(className);
-    var daysSpan = clock.querySelector('.days');
-    var hoursSpan = clock.querySelector('.hours');
-    var minutesSpan = clock.querySelector('.minutes');
-    var secondsSpan = clock.querySelector('.seconds');
+    let clock = document.querySelector(className);
+    let daysSpan = clock.querySelector('.days');
+    let hoursSpan = clock.querySelector('.hours');
+    let minutesSpan = clock.querySelector('.minutes');
+    let secondsSpan = clock.querySelector('.seconds');
 
     function updateClock() {
-      var t = getTimeRemaining(endtime);
+      let t = getTimeRemaining(endtime);
 
       daysSpan.innerHTML = t.days;
       hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
@@ -45,11 +45,16 @@
 
       if (t.total <= 0) {
         clearInterval(timeinterval);
+        let countDownEl = document.querySelector('.count-down');
+        let afterCountDownEl = document.querySelector('.after-countdown');
+
+        countDownEl.style.display = 'none';
+        afterCountDownEl.style.display = 'block';
       }
     }
 
     updateClock();
-    var timeinterval = setInterval(updateClock, 1000);
+    let timeinterval = setInterval(updateClock, 1000);
   }
 
 })(jQuery);
