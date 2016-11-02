@@ -78,7 +78,7 @@ theme        = "hugo-creative-theme"
 
   # About section
   [params.about]
-    headline    = "Sobre"
+    headline    = "Sobre 12345"
     description = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
     buttonText  = "Obter historial"
 
