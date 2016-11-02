@@ -78,9 +78,10 @@ theme        = "hugo-creative-theme"
 
   # About section
   [params.about]
-    headline    = "Sobre 12345"
-    description = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
+    headline    = "Sobre"
+    description = "<strong><i>Arzila</i></strong> é uma pequena freguesia do concelho de Coimbra, situada na margem esquerda do rio Mondego, 13 km a jusante daquela cidade, na denominada região do Baixo Mondego. Fundado em 24 de Fevereiro de 1974, o <strong><i>Grupo Folclórico e Etnográfico de Arzila</i></strong>, procura transmitir as tradições do povo da sua terra e da sua região. A sua acção de defesa do património tem ido desde a recolha de elementos etnográficos, à realização de debates, jornadas culturais, exposições, recuperação de festas, de jogos e outras tradições que estavam a desaparecer."
     buttonText  = "Obter historial"
+    externalLink = "https://jmgirao.github.io/gfea-web/files/historial_gfearzila.pdf"
 
   # Service section
   [params.services]
