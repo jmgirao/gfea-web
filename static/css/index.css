@@ -17,6 +17,10 @@ body {
   padding-top: 20px;
 }
 
+#portfolio {
+  padding-bottom: 20px;
+}
+
 .backdrop {
   position: absolute;
   top:0;

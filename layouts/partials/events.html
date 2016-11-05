@@ -13,10 +13,12 @@
           <img src="img/events/{{ .img }}" class="img-circle" alt="">
           {{ with .title }}<h3>{{ . }}</h3>{{ end }}
           {{ with .category }}<h4>{{ . }}</h4>{{ end }}
-          {{ with .description }}
+          {{ with .summary }}
           <p class="text-muted">{{ . }}</p>
           {{ end }}
+          {{ if .description }}
           <a href="#eventModal{{ .modalID }}" data-toggle="modal">Mais detalhes</a>
+          {{ end }}
         </div>
       </div>
     {{ end }}

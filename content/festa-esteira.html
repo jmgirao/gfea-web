@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
+        {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+        {{ .Hugo.Generator }}
+        <title>{{ .Site.Title }}</title>
+
+        {{ "<!-- Favicon -->" | safeHTML }}
+        <link rel="shortcut icon" href="{{ .Site.BaseURL }}{{ .Site.Params.favicon }}">
+
+        {{ "<!-- Bootstrap Core CSS -->" | safeHTML }}
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" type="text/css">
+
+        {{ "<!-- Custom Fonts -->" | safeHTML }}
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}font-awesome/css/font-awesome.min.css" type="text/css">
+
+        {{ "<!-- Plugin CSS -->" | safeHTML }}
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/animate.min.css" type="text/css">
+
+        {{ "<!-- Custom CSS -->" | safeHTML }}
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/creative.css" type="text/css">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/modals.css" type="text/css">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/festa-esteira.css" type="text/css">
+        {{ range .Site.Params.custom_css }}
+            <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+        {{ end }}
+    </head>
+    <body id="page-top">
+        {{ if or .Site.Params.navigation.links.about .Site.Params.navigation.links.contact }}
+            {{ partial "nav.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.hero }}
+            {{ partial "hero.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.about }}
+            {{ partial "about.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.aside }}
+            {{ partial "aside.html" . }}
+        {{ end }}
+
+        {{ if .Site.Params.contact }}
+            {{ partial "contact.html" . }}
+        {{ end }}
+
+        {{ "<!-- jQuery -->" | safeHTML }}
+        <script src="{{ .Site.BaseURL }}js/jquery.js"></script>
+        {{ "<!-- Bootstrap Core JavaScript -->" | safeHTML }}
+        <script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
+        {{ "<!-- Plugin JavaScript -->" | safeHTML }}
+        <script src="{{ .Site.BaseURL }}js/jquery.easing.min.js"></script>
+        <script src="{{ .Site.BaseURL }}js/jquery.fittext.js"></script>
+        <script src="{{ .Site.BaseURL }}js/wow.min.js"></script>
+        {{ range .Site.Params.plugins_js }}
+        <script src="{{ $.Site.BaseURL }}js/{{ . }}"></script>
+        {{ end }}
+        {{ "<!-- Custom Theme JavaScript -->" | safeHTML }}
+        <script src="{{ .Site.BaseURL }}js/creative.js"></script>
+        {{ range .Site.Params.custom_js }}
+        <script src="{{ $.Site.BaseURL }}js/{{ . }}"></script>
+        {{ end }}
+    </body>
+</html>
