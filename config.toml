@@ -110,21 +110,18 @@ theme        = "hugo-creative-theme"
 
   # Portfolio modals
   [params.portfolio.modal]
-    client     = "Client"
-    date       = "Date"
-    category   = "Category"
-    buttonText = "Close"
+    buttonText = " Close"
 
   # Aside section
   [params.events]
     headline = "Eventos"
-    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    description = ""
 
   # Events modals
   [params.events.modal]
     organizer  = "Organizador"
-    date       = "Date"
-    category   = "Category"
+    date       = "Data"
+    category   = "Categoria"
     buttonText = "Close"
 
   # Contact section
