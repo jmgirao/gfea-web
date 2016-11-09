@@ -21,6 +21,12 @@ body {
   padding-bottom: 20px;
 }
 
+#services .title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .backdrop {
   position: absolute;
   top:0;

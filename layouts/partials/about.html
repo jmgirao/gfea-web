@@ -1,6 +1,6 @@
 {{ "<!-- ABOUT -->" | safeHTML }}
 <section class="bg-primary" id="about">
-    <div class="container">
+    <div class="container wow slideInRight">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 {{ with .Site.Params.about.headline }}
@@ -13,7 +13,7 @@
                     <p class="text-faded">{{ . | markdownify }}</p>
                 {{ end }}
                 {{ with .Site.Params.about }}
-                    <a href="{{ .externalLink }}" class="btn btn-default btn-xl">{{ .buttonText }}</a>
+                    <a href="{{ .externalLink }}" target="blank" class="btn btn-default btn-xl">{{ .buttonText }}</a>
                 {{ end }}
             </div>
         </div>
