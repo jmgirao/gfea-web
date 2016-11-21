@@ -15,16 +15,7 @@ body {
 #services,
 #portfolio {
   padding-top: 20px;
-}
-
-#portfolio {
   padding-bottom: 20px;
-}
-
-#services .title {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .backdrop {

@@ -15,11 +15,9 @@
             {{ range .Site.Params.services.list }}
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <img src="img/logos/{{ .logo }}" class="img-circle wow bounceIn text-primary" height="80px" />
-                    <h4 class="title">{{ .title }}</h4>
-                    {{ with .description }}
-                        <p class="text-muted">{{ . }}</p>
-                    {{ end }}
+                    <img src="img/logos/{{ .logo }}"
+                        class="img-circle wow bounceIn text-primary"
+                        height="100px" alt="{{ .title }}"/>
                 </div>
             </div>
             {{ end }}
