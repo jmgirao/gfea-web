@@ -13,7 +13,7 @@
         {{ partial "cta-events.html" .Site.Params.hero.event }}
       {{ else }}
         {{ with .Site.Params.hero.subtitle }}
-          <p>{{ . | markdownify }}</p>
+          <p class=hero-subtitle>{{ . | markdownify }}</p>
         {{ end }}
       {{ end }}
     </div>

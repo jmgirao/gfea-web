@@ -7,13 +7,23 @@ header {
 header .header-content {
   display: flex;
   align-items: center;
+  padding-bottom: 0;
+  padding-top: 0;
 }
+
 
 header .scroll-arrow {
   position: absolute;
   bottom: 0;
   width: 100%;
   color: #ddd;
+}
+
+header .header-content .header-content-inner p {
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 400;
+  background-color: rgba(0,0,0,.3);
 }
 
 .header-image {

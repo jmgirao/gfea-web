@@ -69,11 +69,11 @@ theme        = "hugo-creative-theme"
     subtitle     = "42 anos em representação dos usos e costumes dos nossos antepassados"
     scrollButton = true
 
-    [params.hero.event]
-      helperText = "Próximo evento"
-      title = "Sopas & Papas"
-      eventDate = "2016-11-26 19:00"
-      status = "A decorrer..."
+    # [params.hero.event]
+    #   helperText = "Próximo evento"
+    #   title = "Sopas & Papas"
+    #   eventDate = "2016-11-26 19:00"
+    #   status = "A decorrer..."
 
 
   # About section
@@ -88,20 +88,24 @@ theme        = "hugo-creative-theme"
     headline = ""
 
     [[params.services.list]]
-      logo        = "ffp.png"
-      title       = "Fed. de Folclore Portugues"
+      logo  = "ffp.png"
+      title = "Fed. de Folclore Portugues"
+      link  = "https://www.ffp.pt/"
 
     [[params.services.list]]
-      logo        = "AFERM.jpg"
-      title       = "AFERM"
+      logo  = "AFERM.jpg"
+      title = "AFERM"
+      link  = "http://www.aferm.pt/"
 
     [[params.services.list]]
-      logo        = "inatel.png"
-      title       = "INATEL"
+      logo  = "inatel.png"
+      title = "INATEL"
+      link  = "http://www.inatel.pt/"
 
     [[params.services.list]]
-      logo        = "cmc.png"
-      title       = "Camara Municipal de Coimbra"
+      logo  = "cmc.png"
+      title = "Camara Municipal de Coimbra"
+      link  = "https://www.cm-coimbra.pt/"
 
   # Portfolio modals
   [params.portfolio.modal]
@@ -121,7 +125,7 @@ theme        = "hugo-creative-theme"
   # Contact section
   [params.contact]
     headline    = "Contactos"
-    description = "Give us a call or send us an email and we will get back to you as soon as possible!"
+    description = "<BR>"
     email       = "gfearzila@gmail.com"
 
     [params.contact.facebook]

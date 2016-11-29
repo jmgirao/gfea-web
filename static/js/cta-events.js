@@ -34,6 +34,7 @@
     let hoursSpan = clock.querySelector('.hours');
     let minutesSpan = clock.querySelector('.minutes');
     let secondsSpan = clock.querySelector('.seconds');
+    let timeinterval;
 
     function updateClock() {
       let t = getTimeRemaining(endtime);
@@ -54,7 +55,7 @@
     }
 
     updateClock();
-    let timeinterval = setInterval(updateClock, 1000);
+    timeinterval = setInterval(updateClock, 1000);
   }
 
 })(jQuery);
