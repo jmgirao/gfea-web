@@ -43,6 +43,10 @@
       background-color: #fff;
   }
 
+  .navbar-default.affix .navbar-toggle .icon-bar {
+    background-color: #888;
+  }
+
   .navbar-default.affix .navbar-header .navbar-brand,
   .navbar-default.open-navbar .navbar-header .navbar-brand {
       color: #f05f40;

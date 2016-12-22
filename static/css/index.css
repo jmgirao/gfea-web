@@ -25,3 +25,15 @@ body {
   height: 100%;
   width: 100%;
 }
+
+.portfolio-modal ul {
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0;
+}
+
+.touch-events .portfolio-box .portfolio-box-caption {
+  opacity: 1;
+  height: 20%;
+}
