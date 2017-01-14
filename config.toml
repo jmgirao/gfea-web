@@ -34,7 +34,7 @@ theme        = "hugo-creative-theme"
     "css/cta-events.css"
   ]
 
-  #Custom JavaScript
+  # Custom JavaScript
   custom_js = ["cta-events.js"]
 
   #Custom Plugins JavaScript
