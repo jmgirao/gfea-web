@@ -26,11 +26,15 @@ body {
   width: 100%;
 }
 
-.portfolio-modal ul {
+.modal ul {
   list-style: none;
   font-size: 16px;
   line-height: 1.5;
   padding: 0;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .touch-events .portfolio-box .portfolio-box-caption {

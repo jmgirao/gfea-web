@@ -13,11 +13,16 @@
 
   // jQuery for page scrolling feature - requires jQuery Easing plugin
   $('a.page-scroll').bind('click', function(event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-      scrollTop: ($($anchor.attr('href')).offset().top - 50)
-    }, 1250, 'easeInOutExpo');
     event.preventDefault();
+
+    var anchor = $(this);
+    var targetEl = $(anchor.attr('href') || '#');
+
+    if(targetEl.length) {
+      $('html, body').stop().animate({
+        scrollTop: targetEl.offset().top - 50
+      }, 1250, 'easeInOutExpo');
+    }
   });
 
   // Highlight the top nav as scrolling occurs
@@ -52,10 +57,10 @@
 
   $('.scroll-arrow .page-scroll').hover(
     function() {
-      $(this).children().addClass('animated bounce');
+      setTimeout($(this).children().addClass('animated bounce'));
     },
     function() {
-      $(this).children().removeClass('animated bounce');
+      setTimeout($(this).children().removeClass('animated bounce'));
     }
   );
 
@@ -72,10 +77,9 @@
   window.onscroll = function() {
     setTimeout(function() {
       if ($('#mainNav').hasClass('open-navbar')) {
-        console.log('dasdsads');
         $('.navbar-toggle:visible').click();
       }
-    }, 100);
+    });
   };
 
 })(jQuery); // End of use strict

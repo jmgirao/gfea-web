@@ -1,6 +1,6 @@
 <div class="cta-events">
-  <p class="helper-text">{{ .helperText }}</p>
-  <h2><a href="#events" class="page-scroll">{{ .title }}</a></h2>
+  {{ if .helperText }}<p class="helper-text">{{ .helperText }}</p>{{ end }}
+  <h2><a {{ if .link }} href="{{ .link }}" {{ end }} class="page-scroll">{{ .title }}</a></h2>
   <div class="count-down" {{with .eventDate}} data-event-date="{{ . }}" {{ end }}>
     <div>
       <span class="days"></span>
@@ -17,6 +17,6 @@
     </div>
   </div>
   <div class="after-countdown">
-    {{ .status }}
+    {{ .status | markdownify }}
   </div>
 </div>

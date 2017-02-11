@@ -69,19 +69,20 @@ theme        = "hugo-creative-theme"
     subtitle     = "42 anos em representação dos usos e costumes dos nossos antepassados"
     scrollButton = true
 
-    # [params.hero.event]
-    #   helperText = "Próximo evento"
-    #   title = "Sopas & Papas"
-    #   eventDate = "2016-11-26 19:00"
-    #   status = "A decorrer..."
+    [params.hero.event]
+      helperText = ""
+      link = "#"
+      title = "43º Aniversário"
+      eventDate = "2017-02-11 23:06"
+      status = ""
 
 
   # About section
   [params.about]
     headline    = "Sobre"
-    description = "<strong><i>[Arzila](//pt.wikipedia.org/wiki/Arzila)</i></strong> é uma pequena freguesia do concelho de Coimbra, situada na margem esquerda do rio Mondego, 13 km a jusante daquela cidade, na denominada região do Baixo Mondego.<BR><BR>Fundado em 24 de Fevereiro de 1974, o <strong><i>Grupo Folclórico e Etnográfico de Arzila</i></strong>, procura transmitir as tradições do povo da sua terra e da sua região. A sua acção de defesa do património tem ido desde a recolha de elementos etnográficos, à realização de debates, jornadas culturais, exposições, recuperação de festas, de jogos e outras tradições que estavam a desaparecer.<BR><BR>Tem sido também sua preocupação a defesa do artesanato, na qual as “esteiras” de Arzila, assumem papel de destaque."
+    description = "<strong><i>[Arzila](//pt.wikipedia.org/wiki/Arzila_(Portugal))</i></strong> é uma pequena freguesia do concelho de Coimbra, situada na margem esquerda do rio Mondego, 13 km a jusante daquela cidade, na denominada região do Baixo Mondego.<BR><BR>Fundado em 24 de Fevereiro de 1974, o <strong><i>Grupo Folclórico e Etnográfico de Arzila</i></strong>, procura transmitir as tradições do povo da sua terra e da sua região. A sua acção de defesa do património tem ido desde a recolha de elementos etnográficos, à realização de debates, jornadas culturais, exposições, recuperação de festas, de jogos e outras tradições que estavam a desaparecer.<BR><BR>Tem sido também sua preocupação a defesa do artesanato, na qual as “esteiras” de Arzila, assumem papel de destaque."
     buttonText  = "Obter historial"
-    externalLink = "https://jmgirao.github.io/gfea-web/files/historial_gfearzila.pdf"
+    externalLink = "files/historial_gfearzila.pdf"
 
   # Service section
   [params.services]
@@ -109,7 +110,7 @@ theme        = "hugo-creative-theme"
 
   # Portfolio modals
   [params.portfolio.modal]
-    buttonText = " Close"
+    buttonText = " Fechar"
 
   # Aside section
   [params.events]
@@ -120,7 +121,7 @@ theme        = "hugo-creative-theme"
   [params.events.modal]
     organizer  = "Organizador"
     date       = "Data"
-    buttonText = " Close"
+    buttonText = " Fechar"
 
   # Contact section
   [params.contact]
@@ -136,3 +137,6 @@ theme        = "hugo-creative-theme"
       address = "Rua do Bairro nº 16, Arzila"
       postalCode = "3045-356 Arzila"
       coord = "40.1838504,-8.554425"
+
+    [params.footer]
+      privacyPolicy = "Privacidade"
