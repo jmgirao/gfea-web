@@ -67,10 +67,10 @@
 
   $('.scroll-arrow .page-scroll').hover(
     function() {
-      setTimeout($(this).children().addClass('animated bounce'));
+      $(this).children().addClass('animated bounce');
     },
     function() {
-      setTimeout($(this).children().removeClass('animated bounce'));
+      $(this).children().removeClass('animated bounce');
     }
   );
 
