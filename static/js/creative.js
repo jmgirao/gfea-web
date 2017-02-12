@@ -111,7 +111,7 @@
     if(mediaQueries.mobile.matches) {
       options = {
         minFontSize: '20px',
-        maxFontSize: '40px'
+        maxFontSize: '30px'
       }
     } else if(mediaQueries.tablet.matches) {
       options = {

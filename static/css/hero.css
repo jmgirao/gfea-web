@@ -41,3 +41,9 @@ header .header-content .header-content-inner p {
   background-size: cover;
   -o-background-size: cover;
 }
+
+@media(max-width:768px) and (orientation:landscape) {
+  header .header-content .header-content-inner hr {
+    margin: 15px auto;
+  }
+}
