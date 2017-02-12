@@ -58,3 +58,7 @@ footer .licence {
   opacity: 1;
   height: 20%;
 }
+
+.portfolio-box {
+  max-width: none;
+}
