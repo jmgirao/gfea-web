@@ -13,7 +13,7 @@
                     <p class="text-faded">{{ . | markdownify }}</p>
                 {{ end }}
                 {{ with .Site.Params.about }}
-                    <a href="{{ .externalLink }}" target="blank" class="btn btn-default btn-xl">{{ .buttonText }}</a>
+                    <a id="get-historial-button" href="{{ .externalLink }}" target="blank" class="btn btn-default btn-xl">{{ .buttonText }}</a>
                 {{ end }}
             </div>
         </div>

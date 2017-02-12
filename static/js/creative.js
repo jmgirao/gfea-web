@@ -84,6 +84,19 @@
     }
   });
 
+  $('.ga-click').click(function(e) {
+    window.dataLayer.push({
+      elementTitle: e.currentTarget.dataset.name,
+      elementCategory: e.currentTarget.dataset.category
+    });
+  });
+
+  $('.ga-external-link').click(function(e) {
+    window.dataLayer.push({
+      elementTitle: e.currentTarget.dataset.name
+    });
+  });
+
   window.onscroll = function() {
     setTimeout(function() {
       if ($('#mainNav').hasClass('open-navbar')) {
@@ -105,7 +118,7 @@
         minFontSize: '30px',
         maxFontSize: '50px'
       }
-    } else if(mediaQueries.desktop.matches) {
+    } else {
       options = {
         minFontSize: '35px',
         maxFontSize: '55px'

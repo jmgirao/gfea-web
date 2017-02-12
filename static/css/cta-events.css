@@ -47,11 +47,11 @@
 
 @media(min-width:768px) {
   .cta-events h2 a {
-    font-size: 25px;
+    font-size: 35px;
   }
 
   .count-down {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .count-down > div {

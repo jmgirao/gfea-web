@@ -3,7 +3,7 @@
         <div class="row no-gutter">
             {{ range sort .Site.Data.projects ".modalID" }}
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#portfolioModal{{ .modalID }}" class="portfolio-box portfolio-link wow fadeIn" data-toggle="modal">
+                    <a href="#portfolioModal{{ .modalID }}" class="ga-click portfolio-box portfolio-link wow fadeIn" data-toggle="modal" data-name="{{ .title }}" data-category="portfolio">
                         <img src="img/portfolio/{{ .img }}" class="img-responsive" alt="{{ .title }}">
                         {{ if .title }}
                             <div class="portfolio-box-caption">
