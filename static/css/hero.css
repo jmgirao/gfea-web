@@ -17,6 +17,7 @@ header .scroll-arrow {
   bottom: 0;
   width: 100%;
   color: #ddd;
+  font-size: 35px;
 }
 
 header .header-content .header-content-inner p {

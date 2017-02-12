@@ -7,9 +7,27 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  var resolutions = {
+    sm: 786,
+    md: 962,
+    lg: 1200
+  }
+
+  var mediaQueries = {
+    mobile: window.matchMedia('(max-width: ' + resolutions.sm + 'px)'),
+    tablet: window.matchMedia('(max-width: ' + resolutions.md + 'px'),
+    desktop: window.matchMedia('(max-width: ' + resolutions.lg + 'px'),
+  }
+
+  mediaQueries.mobile.addListener(handleChangeFitText);
+  mediaQueries.tablet.addListener(handleChangeFitText);
+  mediaQueries.desktop.addListener(handleChangeFitText);
+
   if ('ontouchstart' in window) {
     $('html').addClass('touch-events');
   }
+
+  handleChangeFitText();
 
   // jQuery for page scrolling feature - requires jQuery Easing plugin
   $('a.page-scroll').bind('click', function(event) {
@@ -35,14 +53,6 @@
   $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
   });
-
-  // Fit Text Plugin for Main Header
-  $("h1").fitText(
-    1.2, {
-      minFontSize: '35px',
-      maxFontSize: '55px'
-    }
-  );
 
   // Offset for Main Navigation
   $('#mainNav').affix({
@@ -81,5 +91,31 @@
       }
     });
   };
+
+  function handleChangeFitText() {
+    var options;
+
+    if(mediaQueries.mobile.matches) {
+      options = {
+        minFontSize: '20px',
+        maxFontSize: '40px'
+      }
+    } else if(mediaQueries.tablet.matches) {
+      options = {
+        minFontSize: '30px',
+        maxFontSize: '50px'
+      }
+    } else if(mediaQueries.desktop.matches) {
+      options = {
+        minFontSize: '35px',
+        maxFontSize: '55px'
+      };
+    }
+
+    if(options) {
+      $("h1").fitText(1.2, options);
+    }
+
+  }
 
 })(jQuery); // End of use strict
