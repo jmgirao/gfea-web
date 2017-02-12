@@ -2,6 +2,7 @@ baseurl      = "https://jmgirao.github.io/gfea-web/" #TODO change this
 languageCode = "pt-PT"
 title        = "GFE Arzila - Baixo Mondego"
 theme        = "hugo-creative-theme"
+socialImage  = "img/header.jpg"
 
 [params]
 
@@ -140,3 +141,4 @@ theme        = "hugo-creative-theme"
 
     [params.footer]
       privacyPolicy = "Privacidade"
+      licence = "@2017 Grupo Folclórico e Etnográfico de Arzila - Baixo Mondego"

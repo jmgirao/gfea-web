@@ -2,6 +2,23 @@ body {
   font-family: 'Roboto';
 }
 
+footer {
+  font-size: 11px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer .licence {
+  float: right;
+}
+
+
 .text-back-red,
 .text-back-red a {
   color: rgba(52, 52, 52, .7);

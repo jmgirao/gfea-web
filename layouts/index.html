@@ -33,9 +33,7 @@
         {{ end }}
 
         {{ if .Site.Params.footer }}
-        <footer>
-          <a href="#privacyModal" data-toggle="modal">{{ .Site.Params.footer.privacyPolicy }}</a>
-        </footer>
+            {{ partial "footer.html" . }}
         {{ end }}
 
         {{ if .Site.Data.projects }}

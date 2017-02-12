@@ -1,5 +1,5 @@
-{{ "<!-- ASIDE -->" | safeHTML }}
-<aside id="events">
+{{ "<!-- EVENTS -->" | safeHTML }}
+<section id="events">
   <div class="events-container text-center">
     <div class="call-to-action">
         {{ with $.Site.Params.events.headline }}<h2>{{ . }}</h2>{{ end }}
@@ -24,4 +24,4 @@
     {{ end }}
     </div>
   </div>
-</aside>
+</section>
