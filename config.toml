@@ -2,7 +2,6 @@ baseurl      = "https://jmgirao.github.io/gfea-web/" #TODO change this
 languageCode = "pt-PT"
 title        = "GFE Arzila - Baixo Mondego"
 theme        = "hugo-creative-theme"
-socialImage  = "img/header.jpg"
 
 [params]
 
@@ -22,6 +21,7 @@ socialImage  = "img/header.jpg"
   # information about you and your website.
   name        = "GFE Arzila"
   description = "Fundado em 24 de Fevereiro de 1974, o Grupo Folclórico e Etnográfico de Arzila, procura transmitir as tradições do povo da sua terra e da sua região."
+  socialImage  = "img/header.jpg"
 
   # The path must be relative to the static folder
   favicon     = "favicon1.ico"
