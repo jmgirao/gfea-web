@@ -3,10 +3,7 @@
 <div class="portfolio-modal modal fade" id="portfolioModal{{ .modalID }}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content text-center">
         <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
+            <div class="lr"><div class="rl"></div></div>
         </div>
         <div class="container">
             <div class="row">
@@ -20,15 +17,15 @@
                         {{ end }}
                         <img src="img/portfolio/{{ .img }}" class="img-responsive img-centered" alt="">
                         {{ with .description }}
-                          <p>{{ . | markdownify }}</p>
-                        {{ end }}
-                        {{ with $.Site.Params.portfolio.modal.buttonText }}
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>{{.}}</button>
+                          <div class="text-left">{{ . | markdownify }}</div>
                         {{ end }}
                     </div>
                 </div>
             </div>
         </div>
+        {{ with $.Site.Params.portfolio.modal.buttonText }}
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>{{.}}</button>
+        {{ end }}
     </div>
 </div>
 {{ end }}

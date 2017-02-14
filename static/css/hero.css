@@ -29,17 +29,23 @@ header .header-content .header-content-inner p {
 
 .header-image {
   opacity: .8;
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
-  background-image: url(../img/header.jpg);
-  background-position: center;
+  background-position: bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+header .swiper-header {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.swiper-header .swiper-slide {
+  background-color: #fff;
 }
 
 @media(max-width:768px) and (orientation:landscape) {

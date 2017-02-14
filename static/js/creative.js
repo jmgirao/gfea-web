@@ -19,18 +19,79 @@
     desktop: window.matchMedia('(max-width: ' + resolutions.lg + 'px'),
   }
 
-  mediaQueries.mobile.addListener(handleChangeFitText);
-  mediaQueries.tablet.addListener(handleChangeFitText);
-  mediaQueries.desktop.addListener(handleChangeFitText);
+  initialize();
 
-  if ('ontouchstart' in window) {
-    $('html').addClass('touch-events');
+  initializeSwipers();
+
+  attachEvents();
+
+
+  // PRIVATE FUNCTIONS
+
+  function initialize() {
+    mediaQueries.mobile.addListener(handleChangeFitText);
+    mediaQueries.tablet.addListener(handleChangeFitText);
+    mediaQueries.desktop.addListener(handleChangeFitText);
+
+    if ('ontouchstart' in window) {
+      $('html').addClass('touch-events');
+    }
+
+    handleChangeFitText();
+
+    // Initialize WOW.js Scrolling Animations
+    new WOW().init();
+
+    // Offset for Main Navigation
+    $('#mainNav').affix({
+      offset: {
+        top: 100
+      }
+    });
+
+    // Highlight the top nav as scrolling occurs
+    $('body').scrollspy({
+      target: '.navbar-fixed-top',
+      offset: 51
+    });
   }
 
-  handleChangeFitText();
+  function attachEvents() {
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
+    $('a.page-scroll').click(handleClickPageScroll);
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(handleClickMenuItem);
+    $('.scroll-arrow .page-scroll').hover(handleHoverIn, handleHoverOut);
+    $('.navbar-toggle:visible').click(handleClickOpenMenu);
+    $(window).scroll(handleChangeActiveMenuItem);
 
-  // jQuery for page scrolling feature - requires jQuery Easing plugin
-  $('a.page-scroll').bind('click', function(event) {
+    // GOOGLE ANALYTICS
+    $('.ga-click').click(updateDataLayer);
+    $('.ga-external-link').click(updateDataLayer);
+  }
+
+  function initializeSwipers() {
+
+    var headerSlides = $('.swiper-container .swiper-slide');
+
+    if(headerSlides.length > 1) {
+      //initialize swiper when document ready
+      var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'vertical',
+        loop: true,
+        autoplay: 8000,
+        speed: 2000,
+        effect: 'fade'
+      });
+    }
+
+  }
+
+
+
+  // EVENTS HANDLERS
+
+  function handleClickPageScroll(event) {
     event.preventDefault();
 
     var anchor = $(this);
@@ -41,40 +102,21 @@
         scrollTop: targetEl.offset().top - 50
       }, 1250, 'easeInOutExpo');
     }
-  });
+  }
 
-  // Highlight the top nav as scrolling occurs
-  $('body').scrollspy({
-    target: '.navbar-fixed-top',
-    offset: 51
-  })
-
-  // Closes the Responsive Menu on Menu Item Click
-  $('.navbar-collapse ul li a').click(function() {
+  function handleClickMenuItem() {
     $('.navbar-toggle:visible').click();
-  });
+  }
 
-  // Offset for Main Navigation
-  $('#mainNav').affix({
-    offset: {
-      top: 100
-    }
-  })
+  function handleHoverIn() {
+    $(this).children().addClass('animated bounce');
+  }
 
-  // Initialize WOW.js Scrolling Animations
-  new WOW().init();
+  function handleHoverOut() {
+    $(this).children().removeClass('animated bounce');
+  }
 
-
-  $('.scroll-arrow .page-scroll').hover(
-    function() {
-      $(this).children().addClass('animated bounce');
-    },
-    function() {
-      $(this).children().removeClass('animated bounce');
-    }
-  );
-
-  $('.navbar-toggle:visible').click(function() {
+  function handleClickOpenMenu() {
     var el = $('#mainNav');
 
     if (el.hasClass('open-navbar')) {
@@ -82,28 +124,22 @@
     } else {
       el.addClass('open-navbar');
     }
-  });
+  }
 
-  $('.ga-click').click(function(e) {
-    window.dataLayer.push({
-      elementTitle: e.currentTarget.dataset.name,
-      elementCategory: e.currentTarget.dataset.category
-    });
-  });
-
-  $('.ga-external-link').click(function(e) {
-    window.dataLayer.push({
-      elementTitle: e.currentTarget.dataset.name
-    });
-  });
-
-  window.onscroll = function() {
+  function handleChangeActiveMenuItem() {
     setTimeout(function() {
       if ($('#mainNav').hasClass('open-navbar')) {
         $('.navbar-toggle:visible').click();
       }
     });
-  };
+  }
+
+  function updateDataLayer(e) {
+    window.dataLayer.push({
+      elementTitle: e.currentTarget.dataset.name,
+      elementCategory: e.currentTarget.dataset.category
+    });
+  }
 
   function handleChangeFitText() {
     var options;
