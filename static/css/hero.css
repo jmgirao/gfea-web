@@ -47,6 +47,7 @@ header .swiper-header {
 
 .swiper-header .swiper-slide {
   background-color: #fff;
+  width: 100%;
 }
 
 @media(max-width:768px) and (orientation:landscape) {
