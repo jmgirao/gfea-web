@@ -29,6 +29,36 @@ footer .licence {
   color: #fff;
 }
 
+#about .container {
+  max-width: 1000px;
+}
+
+#about a.gfea-logo:hover img,
+#about a.gfea-logo:focus img {
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+       -o-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#about .gfea-logo img {
+  background-color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+      -ms-transform: scale(1);
+       -o-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: transform .4s ease-in;
+     -moz-transition: transform .4s ease-in;
+      -ms-transition: transform .4s ease-in;
+       -o-transition: transform .4s ease-in;
+          transition: transform .4s ease-in;
+}
+
 #services,
 #portfolio {
   padding-top: 20px;

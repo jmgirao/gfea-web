@@ -1,21 +1,27 @@
 {{ "<!-- ABOUT -->" | safeHTML }}
 <section class="bg-primary" id="about">
-    <div class="container wow slideInRight">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                {{ with .Site.Params.about.headline }}
-                    <h2 class="section-heading">{{ . }}</h2>
-                {{ end }}
-                {{ if and .Site.Params.about.headline .Site.Params.about.description }}
-                    <hr class="light">
-                {{ end }}
-                {{ with .Site.Params.about.description }}
-                    <p class="text-faded">{{ . | markdownify }}</p>
-                {{ end }}
-                {{ with .Site.Params.about }}
-                    <a id="get-historial-button" href="{{ .externalLink }}" target="blank" class="btn btn-default btn-xl">{{ .buttonText }}</a>
-                {{ end }}
-            </div>
+    <div class="container text-center wow slideInRight">
+      {{ with .Site.Params.about.headline }}
+          <h2 class="section-heading">{{ . }}</h2>
+      {{ end }}
+      {{ if and .Site.Params.about.headline .Site.Params.about.description }}
+          <hr class="light">
+      {{ end }}
+      {{ with .Site.Params.about.description }}
+          <p class="text-faded">{{ . | markdownify }}</p>
+      {{ end }}
+      <div class="row">
+        <div class="col-xs-8 col-sm-6 col-md-4 col-xs-offset-2 col-sm-offset-3 col-md-offset-4">
+        {{ with .Site.Params.about.logo }}
+          <a href="{{ . }}" target="_blank" class="gfea-logo">
+            <img src="{{ . }}" alt="gfea" class="img-responsive">
+          </a>
+        {{ end }}
         </div>
+      </div>
+
+      {{ with .Site.Params.about }}
+          <a id="get-historial-button" href="{{ .externalLink }}" target="blank" class="btn btn-default btn-xl">{{ .buttonText }}</a>
+      {{ end }}
     </div>
 </section>

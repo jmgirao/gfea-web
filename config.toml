@@ -82,9 +82,10 @@ googleAnalytics = "UA-52628308-2"
   # About section
   [params.about]
     headline    = "Sobre"
-    description = "<strong><i>[Arzila](//pt.wikipedia.org/wiki/Arzila_(Portugal))</i></strong> é uma pequena freguesia do concelho de Coimbra, situada na margem esquerda do rio Mondego, 13 km a jusante daquela cidade, na denominada região do Baixo Mondego.<BR><BR>Fundado em 24 de Fevereiro de 1974, o <strong><i>Grupo Folclórico e Etnográfico de Arzila</i></strong>, procura transmitir as tradições do povo da sua terra e da sua região. A sua acção de defesa do património tem ido desde a recolha de elementos etnográficos, à realização de debates, jornadas culturais, exposições, recuperação de festas, de jogos e outras tradições que estavam a desaparecer.<BR><BR>Tem sido também sua preocupação a defesa do artesanato, na qual as “esteiras” de Arzila, assumem papel de destaque."
+    description = "<strong><i>[Arzila](//pt.wikipedia.org/wiki/Arzila_(Portugal))</i></strong> é uma pequena freguesia do concelho de Coimbra, situada na margem esquerda do rio Mondego, 13 km a jusante daquela cidade, na denominada região do Baixo Mondego.<BR><BR>Fundado em 24 de Fevereiro de 1974, o <strong><i>Grupo Folclórico e Etnográfico de Arzila</i></strong>, procura transmitir as tradições do povo da sua terra e da sua região. A sua acção de defesa do património tem ido desde a recolha de elementos etnográficos, à realização de debates, jornadas culturais, exposições, recuperação de festas, de jogos e outras tradições que estavam a desaparecer.<BR><BR>Tem sido também sua preocupação a defesa do artesanato, na qual as “esteiras” de Arzila, assumem papel de destaque.<BR><BR>É considerado “Grupo de Interesse Folclórico” pelo Departamento de Cultura da Câmara Municipal de Coimbra, é filiado na Federação do Folclore Português, na Associação de Folclore e Etnografia da Região do Mondego e INATEL e foi declarado Colectividade de Utilidade Pública, em 1990. Em 2003, foi-lhe atribuída pela Câmara Municipal de Coimbra, a “medalha de mérito cultural”."
     buttonText  = "Obter historial"
     externalLink = "files/historial_gfearzila.pdf"
+    logo = "img/logos/gfea.png"
 
   # Service section
   [params.services]
