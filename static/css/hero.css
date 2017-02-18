@@ -2,11 +2,10 @@ header {
   min-height: 100vh;
   background: none;
   display: flex;
+  align-items: center;
 }
 
 header .header-content {
-  display: flex;
-  align-items: center;
   padding-bottom: 0;
   padding-top: 0;
 }
