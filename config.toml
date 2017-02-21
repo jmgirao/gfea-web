@@ -1,4 +1,4 @@
-baseurl      = "https://www.gfearzila.pt/" #TODO change this
+baseurl      = "https://gfearzila.pt/" #TODO change this
 languageCode = "pt-PT"
 title        = "GFE Arzila - Baixo Mondego"
 theme        = "hugo-creative-theme"
