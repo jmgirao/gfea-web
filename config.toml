@@ -68,15 +68,15 @@ googleAnalytics = "UA-52628308-2"
   [params.hero]
     # To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
     slogan       = "Grupo Folclórico e Etnográfico de Arzila"
-    subtitle     = "42 anos em representação dos usos e costumes dos nossos antepassados"
+    subtitle     = "43 anos em representação dos usos e costumes dos nossos antepassados"
     scrollButton = true
 
-    [params.hero.event]
-      helperText = ""
-      link = "#"
-      title = "43º Aniversário"
-      eventDate = "2017/02/24 00:00"
-      status = "24 de Fevereiro de 1974"
+    # [params.hero.event]
+    #   helperText = ""
+    #   link = "#"
+    #   title = "43º Aniversário"
+    #   eventDate = "2017/02/24 00:00"
+    #   status = "24 de Fevereiro de 1974"
 
 
   # About section
