@@ -23,6 +23,7 @@ googleAnalytics = "UA-52628308-2"
   name        = "GFE Arzila"
   description = "Fundado em 24 de Fevereiro de 1974, o Grupo Folclórico e Etnográfico de Arzila, procura transmitir as tradições do povo da sua terra e da sua região."
   socialImage  = "img/header.jpg"
+  keywords = "gfearzila,gfea,arzila,folclore,etnografia,coimbra,grupo,folcorico,etnografico"
 
   # The path must be relative to the static folder
   favicon     = "favicon1.ico"
