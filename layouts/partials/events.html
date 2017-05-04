@@ -8,6 +8,7 @@
     </div>
     <div class="row">
     {{ range .Site.Data.events }}
+    {{ if not .featured }}
       <div class="col-lg-6 col-md-6 col-sm-6 text-center wow bounceIn">
         <div class="service-box">
           <img src="img/events/{{ .img }}" class="img-circle" alt="">
@@ -21,6 +22,7 @@
           {{ end }}
         </div>
       </div>
+      {{ end }}
     {{ end }}
     </div>
   </div>

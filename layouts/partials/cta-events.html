@@ -1,6 +1,16 @@
 <div class="cta-events">
   {{ if .helperText }}<p class="helper-text">{{ .helperText }}</p>{{ end }}
-  <h2><a {{ if .link }} href="{{ .link }}" {{ end }} class="page-scroll">{{ .title }}</a></h2>
+
+  {{ if not .modalID }}
+    <h2><a {{ if .link }} href="{{ .link }}" {{ end }} class="page-scroll">{{ .title }}</a></h2>
+  {{ else }}
+    <h2><a class="ga-click" href="#eventModal{{ .modalID }}" data-toggle="modal" data-name="{{ .title }}" data-category="Evento">{{ .title }}</a></h2>
+  {{ end }}
+
+  {{ if .subtitle }}
+    <p class="helper-text">{{ .subtitle }}</p>
+  {{ end }}
+
   <div class="count-down" {{with .eventDate}} data-event-date="{{ . }}" {{ end }}>
     <div>
       <span class="days"></span>

@@ -74,9 +74,11 @@ googleAnalytics = "UA-52628308-2"
     [params.hero.event]
       helperText = ""
       link = "#"
-      title = "43º Aniversário"
-      eventDate = "2017/02/24 00:00"
-      status = "24 de Fevereiro de 1974"
+      modalID = "123"
+      title = "Serão Etnográfico"
+      subtitle = "13 de Maio de 2017"
+      eventDate = "2017/05/13 21:00"
+      status = "A decorrer..."
 
 
   # About section
