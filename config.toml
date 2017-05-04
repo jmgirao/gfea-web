@@ -23,6 +23,7 @@ googleAnalytics = "UA-52628308-2"
   name        = "GFE Arzila"
   description = "Fundado em 24 de Fevereiro de 1974, o Grupo Folclórico e Etnográfico de Arzila, procura transmitir as tradições do povo da sua terra e da sua região."
   socialImage  = "img/header.jpg"
+  keywords = "gfearzila,gfea,arzila,folclore,etnografia,coimbra,grupo,folcorico,etnografico"
 
   # The path must be relative to the static folder
   favicon     = "favicon1.ico"
@@ -68,7 +69,7 @@ googleAnalytics = "UA-52628308-2"
   [params.hero]
     # To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
     slogan       = "Grupo Folclórico e Etnográfico de Arzila"
-    subtitle     = "42 anos em representação dos usos e costumes dos nossos antepassados"
+    subtitle     = "43 anos em representação dos usos e costumes dos nossos antepassados"
     scrollButton = true
 
     [params.hero.event]
@@ -79,7 +80,6 @@ googleAnalytics = "UA-52628308-2"
       subtitle = "13 de Maio de 2017"
       eventDate = "2017/05/13 21:00"
       status = "A decorrer..."
-
 
   # About section
   [params.about]
