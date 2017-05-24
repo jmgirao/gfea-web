@@ -74,11 +74,11 @@ googleAnalytics = "UA-52628308-2"
 
     [params.hero.event]
       helperText = ""
-      link = "#"
-      modalID = "123"
-      title = "Serão Etnográfico"
-      subtitle = "13 de Maio de 2017"
-      eventDate = "2017/05/13 21:00"
+      link = "#events"
+      modalID = ""
+      title = "Festa da Esteira"
+      subtitle = "17 de Junho de 2017"
+      eventDate = "2017/06/17 21:00"
       status = "A decorrer..."
 
   # About section
