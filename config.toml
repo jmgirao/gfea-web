@@ -72,14 +72,14 @@ googleAnalytics = "UA-52628308-2"
     subtitle     = "43 anos em representação dos usos e costumes dos nossos antepassados"
     scrollButton = true
 
-    [params.hero.event]
-      helperText = ""
-      link = "#events"
-      modalID = ""
-      title = "Festa da Esteira"
-      subtitle = "17 de Junho de 2017"
-      eventDate = "2017/06/17 21:00"
-      status = "A decorrer..."
+    #[params.hero.event]
+    #  helperText = ""
+    #  link = "#events"
+    #  modalID = ""
+    #  title = "Festa da Esteira"
+    #  subtitle = "17 de Junho de 2017"
+    #  eventDate = "2017/06/17 21:00"
+    #  status = "A decorrer..."
 
   # About section
   [params.about]
