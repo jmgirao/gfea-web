@@ -1,0 +1,95 @@
+.cta-events {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cta-events .helper-text {
+  max-width: 100% !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.cta-events h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.cta-events h2 a {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.cta-events h2 a:hover,
+.cta-events h2 a:focus {
+  text-decoration: none;
+}
+
+.count-down {
+  font-weight: 100;
+  text-align: center;
+  font-size: 25px;
+  background-color: rgba(0,0,0,.3);
+}
+
+.count-down > div {
+  display: inline-block;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.count-down div > span {
+  padding: 3px 10px 0;
+  display: inline-block;
+}
+
+.small-text {
+  font-size: 10px;
+}
+
+.after-countdown {
+  margin-top: 20px;
+  display: none;
+}
+
+@media(min-width:768px) {
+  .cta-events h2 {
+    margin-bottom: 30px;
+  }
+
+  .cta-events h2 a {
+    font-size: 30px;
+  }
+
+  .count-down {
+    font-size: 28px;
+  }
+
+  .count-down > div {
+    width: 25%;
+  }
+
+  .small-text {
+    font-size: 12px;
+  }
+}
+
+
+@media(min-width:992px) {
+  .cta-events h2 a {
+    font-size: 35px;
+  }
+
+  .count-down {
+    font-size: 30px;
+  }
+}
+
+@media(min-width: 1200x) {
+  .cta-events h2 a {
+    font-size: 40px;
+  }
+
+  .count-down {
+    font-size: 35px;
+  }
+}

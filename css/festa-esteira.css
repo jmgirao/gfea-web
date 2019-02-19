@@ -1,0 +1,170 @@
+body {
+  webkit-tap-highlight-color: rgba(255, 255, 255, .2);
+  background-color: #000;
+  color: #ffffff;
+}
+
+.light {
+    font-weight: 400;
+  }
+
+  header {
+    background-image: url(../../../assets/images/esteira.jpg);
+
+    .time-countdown {
+      background-color: rgba(0, 0, 0, .5);
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .subtitle {
+      margin-bottom: 100px;
+    }
+
+    .header-content .header-content-inner p {
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+
+  .bg-primary {
+    background-color: transparent;
+  }
+
+  .text-content {
+    background-color: rgba(0, 0, 0, .5);
+    margin-bottom: 20px;
+  }
+
+  .program-section {
+    background: url(../../../assets/images/esteira.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    ul > li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .btn-circle {
+    width: 70px;
+    height: 70px;
+    padding: 14px 10px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+  }
+
+  .btn-circle:hover,
+  .btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255, 255, 255, .1);
+  }
+
+  .page-scroll .btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+  }
+
+  .page-scroll .btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+  }
+
+  #map {
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+  }
+
+  @media(min-width: 767px) {
+    #map {
+      height: 400px;
+      margin-top: 250px;
+    }
+  }
+
+  .btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+
+  .btn-default {
+    border: 1px solid #f05f40;
+    color: #f05f40;
+    background-color: transparent;
+  }
+
+  .btn-default:hover,
+  .btn-default:focus {
+    border: 1px solid #f05f40;
+    outline: 0;
+    color: #fff;
+    background-color: #f05f40;
+  }
+
+  .btn-huge {
+    padding: 25px;
+    font-size: 26px;
+  }
+
+  .banner-social-buttons {
+    margin-top: 0;
+  }
+
+  @media(max-width: 1199px) {
+    ul.banner-social-buttons {
+      margin-top: 15px;
+    }
+  }
+
+  @media(max-width: 767px) {
+    ul.banner-social-buttons > li {
+      display: block;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255, 255, 255, .2);
+  }
+
+  ::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255, 255, 255, .2);
+  }
+
+  img::selection {
+    background: 0 0;
+  }
+
+  img::-moz-selection {
+    background: 0 0;
+  }
